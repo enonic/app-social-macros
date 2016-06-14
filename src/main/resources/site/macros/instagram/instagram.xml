@@ -1,0 +1,14 @@
+<macro>
+  <display-name>Instagram macro</display-name>
+  <description>Insert a single Instagram post into your article or website</description>
+  <form>
+    <input name="url" type="TextLine">
+      <label>Url</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+    <input name="maxWidth" type="TextLine">
+      <label>Max width</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+  </form>
+</macro>
