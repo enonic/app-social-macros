@@ -1,0 +1,10 @@
+<macro>
+  <display-name>Youtube</display-name>
+  <description>Stream a video directly from your website</description>
+  <form>
+    <input name="url" type="TextLine">
+      <label>Url</label>
+      <occurrences minimum="1" maximum="1"/>
+    </input>
+  </form>
+</macro>
