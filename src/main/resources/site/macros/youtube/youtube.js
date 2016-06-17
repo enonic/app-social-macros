@@ -21,7 +21,7 @@ exports.macro = function (context) {
 
 function makeErrorMessage ( message ) {
     return {
-        body: '<div class="error-message">' + message + '</div>',
+        body: message,
         pageContributions: {}
     }
 }

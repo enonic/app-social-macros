@@ -1,13 +1,12 @@
 exports.macro = function (context) {
-    var url = context.params['url'],
-        maxWidth = context.params['maxWidth'] || 'auto';
+    var url = context.params['url'];
 
     if (!url || !isValidInstagramUrl(url)) {
         return makeErrorMessage("Valid url is required.");
     }
 
-    var html = "<blockquote class='instagram-media' data-instgrm-captioned style='width: 100%; max-width: " + maxWidth + ";'>" +
-               "<a href='" + url + "'>Link to post</a></blockquote>\n";
+    var html = "<blockquote class='instagram-media' data-instgrm-captioned style='width: 100%;'>" +
+               "<a href='" + url + "'></a></blockquote>\n";
 
     return {
         body: html,
@@ -25,7 +24,7 @@ function isValidInstagramUrl(url) {
 
 function makeErrorMessage(message) {
     return {
-        body: '<div class="error-message">' + message + '</div>',
+        body: message,
         pageContributions: {}
     }
 }
