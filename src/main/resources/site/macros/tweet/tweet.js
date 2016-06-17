@@ -1,6 +1,6 @@
 exports.macro = function (context) {
     var url = context.params['url'],
-        lang = context.params['lang'] || 'en';
+        lang = getLang(context);
 
     if (!url || !isValidTweetUrl(url)) {
         return makeErrorMessage("Valid tweet url is required.");
@@ -24,7 +24,15 @@ function isValidTweetUrl(url) {
 
 function makeErrorMessage(message) {
     return {
-        body: '<div class="error-message">' + message + '</div>',
+        body: message,
         pageContributions: {}
     }
+}
+
+function getLang(context) {
+    if(context.request.headers.hasOwnProperty("Accept-Language")) {
+        var acceptLang = context.request.headers["Accept-Language"];
+        return acceptLang.split(",")[0];
+    }
+    return 'en';
 }

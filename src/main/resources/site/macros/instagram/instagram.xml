@@ -6,9 +6,5 @@
       <label>Url</label>
       <occurrences minimum="1" maximum="1"/>
     </input>
-    <input name="maxWidth" type="TextLine">
-      <label>Max width</label>
-      <occurrences minimum="0" maximum="1"/>
-    </input>
   </form>
 </macro>

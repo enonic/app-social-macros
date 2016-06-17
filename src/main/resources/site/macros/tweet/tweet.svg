@@ -13,13 +13,7 @@
           <g id="g12">
             <g id="g14">
               <g id="g16-Clipped">
-                <g id="mask-2" fill="#FFFFFF">
-                  <polygon id="path-1" points="0 0.0005226536 59.5346005 0.0005226536 59.5346005 48.3851797 0 48.3851797"></polygon>
-                </g>
                 <g>
-                  <mask id="mask-2" fill="white">
-                    <use xlink:href="#path-1"></use>
-                  </mask>
                   <g id="path-1"></g>
                   <g id="g16" mask="url(#mask-2)">
                     <g transform="translate(-1.000000, 0.000000)" id="path22">
