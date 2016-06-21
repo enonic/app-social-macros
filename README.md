@@ -1,4 +1,4 @@
-# app-social-macros
+# Social Macros App
 Application that enables usage of social macros in your site's html area.
 
 Macros are written in the following format: 
