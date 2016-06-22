@@ -1,5 +1,5 @@
 <macro>
-  <display-name>Twitter macro</display-name>
+  <display-name>Twitter</display-name>
   <description>Insert a single Tweet into your article or website</description>
   <form>
     <input name="url" type="TextLine">

@@ -1,5 +1,5 @@
 <macro>
-  <display-name>Instagram macro</display-name>
+  <display-name>Instagram</display-name>
   <description>Insert a single Instagram post into your article or website</description>
   <form>
     <input name="url" type="TextLine">
