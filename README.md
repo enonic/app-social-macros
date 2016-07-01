@@ -45,3 +45,6 @@ Before trying to build the project, you need to verify that the following softwa
 ## Usage
 
 Add Social Macros App as a dependency to your site to enable it using macros
+
+## Known issues
+- Tweet preview does not get rendered in FF in macro preview dialog of XP Admin application
