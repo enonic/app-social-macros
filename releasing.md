@@ -18,4 +18,4 @@ To release a new version of this app, please follow the steps below:
 
 6. Push the updated code to GitHub.
 
-    git push origin master --tags
+    git push origin vX.X.X
