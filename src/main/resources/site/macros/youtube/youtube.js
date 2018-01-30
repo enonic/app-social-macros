@@ -7,7 +7,7 @@ exports.macro = function (context) {
         return makeErrorMessage("Valid youtube url is required.");
     }
 
-    var html = "<div class='youtube-video-wrapper'><iframe src='" + convertUrl( url ) + "'></iframe></div>";
+    var html = "<div class='youtube-video-wrapper'><iframe src='" + convertUrl( url ) + "' allowfullscreen></iframe></div>";
 
     return {
         body: html,
