@@ -32,8 +32,8 @@ By default, rendered macros use their own native styling, so in order to overrid
   
 Before trying to build the project, you need to verify that the following software are installed:
 
-* Java 8 (update 40 or above) for building and running.
-* Gradle 2.x build system.
+* Java 11 (or higher)
+* Gradle 5.0 (or higher)
 
 ## Deploy:
     gradle deploy - (requires XP_HOME variable to be set) - this will build and deploy the app into XP_HOME/deploy folder
