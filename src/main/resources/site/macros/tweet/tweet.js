@@ -19,7 +19,7 @@ exports.macro = function (context) {
 };
 
 function isValidTweetUrl(url) {
-    return /^(https|http)?:\/\/twitter\.com\/(?:#!\/)?(\w+)\/status(es)?\/(\d+)$/.test(url);
+    return /^(https|http)?:\/\/twitter\.com\/(?:#!\/)?(\w+)\/status(es)?\/(\d+)??(?:&?[^=&]*=[^=&]*)*$/.test(url);
 }
 
 function makeErrorMessage(message) {
