@@ -31,7 +31,7 @@ function isYoutubeUrl( url ) {
 }
 
 function convertUrl( url ) {
-    return "https://www.youtube.com/embed/" + fetchVideoId( url );
+    return "https://www.youtube-nocookie.com/embed/" + fetchVideoId( url );
 }
 
 function fetchVideoId( url ) {
