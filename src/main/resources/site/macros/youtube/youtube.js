@@ -1,13 +1,20 @@
 var portal = require('/lib/xp/portal');
 
 exports.macro = function (context) {
-    var url = context.params['url'];
+    const url = context.params.url;
+    let title = context.params.title;
 
     if(!url || !isYoutubeUrl(url)) {
         return makeErrorMessage("Valid youtube url is required.");
     }
 
-    var html = "<div class='youtube-video-wrapper'><iframe src='" + convertUrl( url ) + "' allowfullscreen></iframe></div>";
+    if (isProperTitle(title) == false) {
+        return makeErrorMessage("Valid title is required")
+    }
+
+    title = title ? `title="${title}"` : '';
+
+    const html = `<div class='youtube-video-wrapper'><iframe ${title} src='${convertUrl( url )}' allowfullscreen></iframe></div>`;
 
     return {
         body: html,
@@ -28,6 +35,11 @@ function makeErrorMessage ( message ) {
 
 function isYoutubeUrl( url ) {
     return /^(https:\/\/|http:\/\/)?(www\.)?(m\.)?(youtu\.be\/|youtube\.com\/)(.)+/.test( url );
+}
+
+function isProperTitle( title ) {
+    // Check for things that would break
+    return /^(?!.*[\"\>\<\']).*/.test(title);
 }
 
 function convertUrl( url ) {
