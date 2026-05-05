@@ -1,0 +1,10 @@
+kind: "Macro"
+title: "Instagram"
+description: "Insert a single Instagram post into your article or website"
+form:
+  - type: "TextLine"
+    name: "url"
+    label: "Url"
+    occurrences:
+      min: 1
+      max: 1

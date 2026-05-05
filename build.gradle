@@ -1,25 +1,15 @@
 plugins {
-	id 'maven-publish'
-	id 'com.enonic.defaults' version '2.1.6'
-	id 'com.enonic.xp.app' version '3.6.2'
-}
-
-app {
-	name = project.appName
-	displayName = "Social Macros"
-	vendorName = 'Enonic AS'
-	vendorUrl = 'https://enonic.com'
-	systemVersion = "${xpVersion}"
+    id 'maven-publish'
+    id 'com.enonic.defaults' version '2.1.6'
+    id 'com.enonic.xp.app'
 }
 
 dependencies {
-	implementation "com.enonic.xp:core-api:${xpVersion}"
-	implementation "com.enonic.xp:portal-api:${xpVersion}"
-	include "com.enonic.xp:lib-portal:${xpVersion}"
+    include xplibs.portal
 }
 
 repositories {
-	mavenLocal()
-	mavenCentral()
-	xp.enonicRepo()
+    mavenLocal()
+    mavenCentral()
+    xp.enonicRepo()
 }
