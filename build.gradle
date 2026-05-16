@@ -6,10 +6,12 @@ plugins {
 
 dependencies {
     include xplibs.portal
+    include "com.enonic.lib:lib-asset:2.0.0-SNAPSHOT"
 }
 
 repositories {
     mavenLocal()
     mavenCentral()
     xp.enonicRepo()
+    xp.enonicRepo('dev')
 }
