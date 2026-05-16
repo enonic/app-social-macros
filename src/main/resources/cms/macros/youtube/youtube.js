@@ -1,4 +1,4 @@
-var portal = require('/lib/xp/portal');
+var assetLib = require('/lib/enonic/asset');
 
 exports.macro = function (context) {
     const url = context.params.url;
@@ -20,7 +20,7 @@ exports.macro = function (context) {
         body: html,
         pageContributions: {
             headBegin: [
-                '<link rel="stylesheet" href="' + portal.assetUrl({path: 'css/youtube.css', application: app.name}) + '" type="text/css" />'
+                '<link rel="stylesheet" href="' + assetLib.assetUrl({path: 'css/youtube.css'}) + '" type="text/css" />'
             ]
         }
     }
