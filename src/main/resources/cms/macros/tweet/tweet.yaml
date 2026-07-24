@@ -1,6 +1,6 @@
 kind: "Macro"
-title: "Twitter"
-description: "Insert a single Tweet into your article or website"
+title: "Twitter (legacy)"
+description: "Deprecated, use the X macro instead. Will be removed in the next major version."
 form:
   - type: "TextLine"
     name: "url"

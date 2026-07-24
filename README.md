@@ -14,10 +14,16 @@ Following macros are available:
 requires 'url' attribute with video link [youtube url="https://youtu.be/some-link"/]
 ```
 
-## Tweet macro
+## X macro
+```
+requires 'url' attribute with link to X post [x url="https://x.com/user-name/status/post-id"/]
+```
+
+## Tweet macro (deprecated)
 ```
 requires 'url' attribute with link to tweet [tweet url="https://twitter.com/user-name/status/post-id"/]
 ```
+> **Deprecated:** use the X macro instead. The tweet macro is kept for backwards compatibility with existing content and will be removed in the next major version.
 
 ## Instagram macro
 ```
